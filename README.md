@@ -91,3 +91,15 @@ public String sayHunter(){
 14. Внесите изменения из произвольной ветки feature/add_reply в master через Merge.
 
 `git add -A && git commit -m "Add Hunter" && git push origin feature/add_reply`
+
+15. Убедитесь, что нет собранного артефакта в сборке по ветке master.
+
+![no_artifacts](./task2/no_artifacts.png)
+
+16. Настройте конфигурацию так, чтобы она собирала .jar в артефакты сборки.
+
+![art_path](./task2/art_path.png)
+
+17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
+
+![artifacts](./task2/artifacts.png)
