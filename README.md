@@ -64,4 +64,42 @@
 
 ![new_branch](./task2/new_branch.png)
 
+`git checkout feature/add_reply`
+
 10. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter.
+
+```
+public String sayHunter(){
+		return "Find hunter always";
+	}
+```
+
+11. Дополните тест для нового метода на поиск слова hunter в новой реплике.
+
+```
+@Test
+	public void welcomerSaysHunter() {
+		assertThat(welcomer.sayHunter(), containsString("hunter"));
+	}
+```
+
+12. Сделайте push всех изменений в новую ветку репозитория.
+13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
+
+![only_test](./task2/only_test.png)
+
+14. Внесите изменения из произвольной ветки feature/add_reply в master через Merge.
+
+`git add -A && git commit -m "Add Hunter" && git push origin feature/add_reply`
+
+15. Убедитесь, что нет собранного артефакта в сборке по ветке master.
+
+![no_artifacts](./task2/no_artifacts.png)
+
+16. Настройте конфигурацию так, чтобы она собирала .jar в артефакты сборки.
+
+![art_path](./task2/art_path.png)
+
+17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
+
+![artifacts](./task2/artifacts.png)
