@@ -27,3 +27,11 @@
 ## Основная часть
 
 1. Создайте новый проект в teamcity на основе fork.
+
+![create](./task2/create.png)
+
+2. Сделайте autodetect конфигурации.
+
+![autodetect](./task2/autodetect.png)
+
+3. Сохраните необходимые шаги, запустите первую сборку master.
