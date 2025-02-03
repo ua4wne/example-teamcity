@@ -89,3 +89,5 @@ public String sayHunter(){
 ![only_test](./task2/only_test.png)
 
 14. Внесите изменения из произвольной ветки feature/add_reply в master через Merge.
+
+`git add -A && git commit -m "Add Hunter" && git push origin feature/add_reply`
