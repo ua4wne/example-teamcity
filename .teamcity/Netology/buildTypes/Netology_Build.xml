@@ -3,6 +3,9 @@
   <name>Build</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="target/original-plaindoll-0.0.2.jar&#xA;target/plaindoll-0.0.2.jar" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="Test" name="Test" type="Maven2">
