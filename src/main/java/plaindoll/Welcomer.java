@@ -14,6 +14,6 @@ public class Welcomer{
 		return "something in the way";
 	}
 	public String sayHunter(){
-		return "Find hunter always";
+		return "Find hunter where";
 	}
 }
